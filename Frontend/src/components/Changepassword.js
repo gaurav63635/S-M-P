@@ -30,7 +30,7 @@ const Changepassword = () => {
       window.alert("Confirm and new password should be same");
     } else {
       try {
-        const response = await axios.patch(`http://localhost:7000/member/memberpassword/${userId}`, {
+        const response = await axios.patch(`https://e-housing-helping.onrender.com/member/memberpassword/${userId}`, {
           cpassword: data.cpassword,
           password: data.password
         });

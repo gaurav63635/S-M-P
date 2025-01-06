@@ -23,7 +23,7 @@ const Sellpage = () => {
 
   const getData = async () => {
     try {
-      const response = await axios.get(`http://localhost:7000/member/member/${userId}`);
+      const response = await axios.get(`https://e-housing-helping.onrender.com/member/member/${userId}`);
 
       if (response.status === 200) {
         setmember(response.data.member || null);
@@ -41,7 +41,7 @@ const Sellpage = () => {
 
   const getSociety = async (societyId) => {
     try {
-      const response = await axios.get(`http://localhost:7000/society/getsociety/${societyId}`);
+      const response = await axios.get(`https://e-housing-helping.onrender.com/society/getsociety/${societyId}`);
 
       if (response.status === 200) {
         setsociety(response.data.data || null);
@@ -56,7 +56,7 @@ const Sellpage = () => {
 
   const getSell = async () => {
     try {
-      const response = await axios.get(`http://localhost:7000/selllist/selllist/${userId}`);
+      const response = await axios.get(`https://e-housing-helping.onrender.com/selllist/selllist/${userId}`);
 
       if (response.status === 200) {
         setSell(response.data);
@@ -70,7 +70,7 @@ const Sellpage = () => {
 
   const editdata = async (id) => {
     try {
-      const response = await axios.patch(`http://localhost:7000/selllist/selllist/${id}`)
+      const response = await axios.patch(`https://e-housing-helping.onrender.com/selllist/selllist/${id}`)
 
       if (response.status === 201) {
         alert(response.data.message);
@@ -86,7 +86,7 @@ const Sellpage = () => {
 
   const deletedata = async (id) => {
     try {
-      const response = await axios.delete(`http://localhost:7000/selllist/selllist/${id}`)
+      const response = await axios.delete(`https://e-housing-helping.onrender.com/selllist/selllist/${id}`)
 
       if (response.status === 200) {
         alert(response.data.message);

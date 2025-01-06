@@ -29,7 +29,7 @@ const MemberAccount = () => {
 
   const getData = async () => {
     try {
-      const response = await axios.get(`http://localhost:7000/member/member/${userId}`);
+      const response = await axios.get(`https://e-housing-helping.onrender.com/member/member/${userId}`);
 
       if (response.status === 200) {
         setmember(response.data.member || null);

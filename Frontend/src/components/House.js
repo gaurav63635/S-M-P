@@ -15,7 +15,7 @@ const House = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post("http://localhost:7000/house", data);
+            const response = await axios.post("https://e-housing-helping.onrender.com/house", data);
 
             if (response.status === 201) {
                 window.alert(response.data.message);

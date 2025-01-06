@@ -22,7 +22,7 @@ const Message = () => {
 
     const getData = async () => {
         try {
-            const response = await axios.get(`http://localhost:7000/message/message/${userId}`);
+            const response = await axios.get(`https://e-housing-helping.onrender.com/message/message/${userId}`);
 
             if (response.status === 200) {
                 const message = response.data.data;

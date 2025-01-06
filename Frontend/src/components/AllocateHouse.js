@@ -33,7 +33,7 @@ const AllocateHouse = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:7000/member/addmember", formData, {
+      const response = await axios.post("https://e-housing-helping.onrender.com/member/addmember", formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }

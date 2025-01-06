@@ -17,7 +17,7 @@ const Society = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:7000/society/addsociety", data);
+      const response = await axios.post("https://e-housing-helping.onrender.com/society/addsociety", data);
 
       if (response.status === 201) {
         window.alert(response.data.message);
@@ -33,7 +33,7 @@ const Society = () => {
 
   const getdata = async () => {
     try {
-      const response = await axios.get("http://localhost:7000/society/allsociety");
+      const response = await axios.get("https://e-housing-helping.onrender.com/society/allsociety");
 
       if (response.status === 200) {
         setfirst(response.data.data);
@@ -50,7 +50,7 @@ const Society = () => {
   const deletedata = async (id) => {
 
     try {
-      const response = await axios.delete(`http://localhost:7000/society/deletesociety/${id}`);
+      const response = await axios.delete(`https://e-housing-helping.onrender.com/society/deletesociety/${id}`);
 
       if (response.status === 200) {
         window.alert(response.data.message);

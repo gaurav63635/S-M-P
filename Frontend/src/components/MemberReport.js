@@ -14,7 +14,7 @@ const MemberReport = () => {
 
   const getdata = async () => {
     try {
-      const response = await axios.get(`http://localhost:7000/society/allsociety`);
+      const response = await axios.get(`https://e-housing-helping.onrender.com/society/allsociety`);
 
       if (response.status === 200) {
         setfirst(response.data.data);

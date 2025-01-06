@@ -26,7 +26,7 @@ const Layout = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post("http://localhost:7000/login/adminlogin", data);
+            const response = await axios.post("https://e-housing-helping.onrender.com/login/adminlogin", data);
 
             if (response.status === 201) {
                 localStorage.setItem("Admin", response.data.token);
@@ -68,7 +68,7 @@ const Layout = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post("http://localhost:7000/login/memberlogin", member);
+            const response = await axios.post("https://e-housing-helping.onrender.com/login/memberlogin", member);
 
             if (response.status === 200) {
                 localStorage.setItem("Member", response.data.token);

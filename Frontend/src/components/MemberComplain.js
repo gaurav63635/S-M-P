@@ -38,7 +38,7 @@ const MemberComplain = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:7000/complain/complain', data);
+      const response = await axios.post('https://e-housing-helping.onrender.com/complain/complain', data);
 
       if (response.status === 201) {
         toast.success(`🦄 ${response.data.message}!`, {
