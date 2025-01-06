@@ -1,0 +1,180 @@
+/* General Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Applying Animations */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.zoom-in {
+  animation: zoomIn 1s ease-out;
+}
+
+.bounce-in {
+  animation: bounceIn 1s ease-out;
+}
+
+.pulse {
+  animation: pulse 1.5s infinite;
+}
+
+/* Additional Styling */
+.shadow-lg {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-success {
+  border-color: #28a745;
+  color: #28a745;
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+
+/* Navbar.css */
+
+.navbar {
+  padding: 7px 30px;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 15px;
+}
+
+.custom-navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Semi-transparent black */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  /* Subtle border */
+}
+
+.navbar-brand {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #ff5555;
+  /* Accent color */
+}
+
+.links {
+  color: #ffffff;
+  padding: 10px 15px;
+  font-size: 1rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.links:hover {
+  color: #ff5555;
+  /* Accent color */
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Lighten on hover */
+  border-radius: 5px;
+}
+
+.custom-btn {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #ff5555;
+  /* Accent color */
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,...");
+  /* Custom SVG or Font Awesome icon */
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+.links i,
+.btn i {
+  margin-right: 5px;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.links:hover i,
+.btn:hover i {
+  color: #ff5555;
+  /* Change to your preferred hover color */
+}
