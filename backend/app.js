@@ -7,7 +7,7 @@ const port = process.env.PORT
 
 
 app.use(cors({
-    origin: ['http://localhost:3000','https://e-housing-helping.onrender.com'],
+    origin: ['http://localhost:3000','https://e-housing-helping.vercel.app'],
     methods: ['GET', 'POST', 'OPTIONS', 'DELETE', 'PUT', 'PATCH'],
     allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept'],
     credentials: true // Enable credentials
